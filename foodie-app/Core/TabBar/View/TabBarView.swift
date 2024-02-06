@@ -24,7 +24,7 @@ struct TabBarView: View {
                 .tag(TabBar.home)
             Text("Favorite View")
                 .tag(TabBar.favorite)
-            Text("Favorite View")
+            ProfileView()
                 .tag(TabBar.profile)
             Text("History View")
                 .tag(TabBar.history)

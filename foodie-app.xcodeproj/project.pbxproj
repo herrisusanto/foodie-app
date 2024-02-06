@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F05A2C52B721A0C00702E87 /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F05A2C42B721A0C00702E87 /* PaymentMethod.swift */; };
+		0F05A2C72B721EDA00702E87 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F05A2C62B721EDA00702E87 /* ProfileView.swift */; };
+		0F05A2C92B721EFF00702E87 /* InformationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F05A2C82B721EFF00702E87 /* InformationCard.swift */; };
+		0F05A2CB2B721F0F00702E87 /* RadioButtonPaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F05A2CA2B721F0F00702E87 /* RadioButtonPaymentMethod.swift */; };
+		0F05A2CD2B72594000702E87 /* PaymentMethodCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F05A2CC2B72594000702E87 /* PaymentMethodCard.swift */; };
 		0F0DF4A22B6BC51000549C84 /* FoodieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0DF4A12B6BC51000549C84 /* FoodieApp.swift */; };
 		0F0DF4A42B6BC51000549C84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0DF4A32B6BC51000549C84 /* ContentView.swift */; };
 		0F0DF4A62B6BC51200549C84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F0DF4A52B6BC51200549C84 /* Assets.xcassets */; };
@@ -27,6 +32,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F05A2C42B721A0C00702E87 /* PaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethod.swift; sourceTree = "<group>"; };
+		0F05A2C62B721EDA00702E87 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		0F05A2C82B721EFF00702E87 /* InformationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationCard.swift; sourceTree = "<group>"; };
+		0F05A2CA2B721F0F00702E87 /* RadioButtonPaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonPaymentMethod.swift; sourceTree = "<group>"; };
+		0F05A2CC2B72594000702E87 /* PaymentMethodCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodCard.swift; sourceTree = "<group>"; };
 		0F0DF49E2B6BC51000549C84 /* foodie-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "foodie-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F0DF4A12B6BC51000549C84 /* FoodieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieApp.swift; sourceTree = "<group>"; };
 		0F0DF4A32B6BC51000549C84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +68,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F05A2C12B7219C800702E87 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				0F05A2C32B7219D600702E87 /* Model */,
+				0F05A2C22B7219D000702E87 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		0F05A2C22B7219D000702E87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0F05A2C62B721EDA00702E87 /* ProfileView.swift */,
+				0F05A2C82B721EFF00702E87 /* InformationCard.swift */,
+				0F05A2CC2B72594000702E87 /* PaymentMethodCard.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0F05A2C32B7219D600702E87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F05A2C42B721A0C00702E87 /* PaymentMethod.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0F0DF4952B6BC51000549C84 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +143,7 @@
 		0F0DF4B02B6BC53F00549C84 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				0F05A2C12B7219C800702E87 /* Profile */,
 				0F0DF4CE2B6CF13A00549C84 /* Home */,
 				0F0DF4C42B6CECD700549C84 /* TabBar */,
 				0F0DF4BA2B6BF55100549C84 /* Components */,
@@ -144,6 +182,7 @@
 		0F0DF4BA2B6BF55100549C84 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0F05A2CA2B721F0F00702E87 /* RadioButtonPaymentMethod.swift */,
 				0F0DF4BB2B6BF59800549C84 /* CustomCorners.swift */,
 				0F0DF4C22B6C010300549C84 /* CustomTextField.swift */,
 				0F4CD9932B70C52F00947F2E /* MenuItemView.swift */,
@@ -288,19 +327,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F05A2CB2B721F0F00702E87 /* RadioButtonPaymentMethod.swift in Sources */,
 				0F4CD9992B70F58B00947F2E /* TabBar.swift in Sources */,
 				0F0DF4B32B6BC72A00549C84 /* OnBoardingView.swift in Sources */,
 				0F0DF4C82B6CECFE00549C84 /* TabBarView.swift in Sources */,
+				0F05A2C92B721EFF00702E87 /* InformationCard.swift in Sources */,
 				0F0DF4BC2B6BF59800549C84 /* CustomCorners.swift in Sources */,
 				0F0DF4D12B6CF14C00549C84 /* HomeView.swift in Sources */,
+				0F05A2CD2B72594000702E87 /* PaymentMethodCard.swift in Sources */,
 				0F4CD9942B70C52F00947F2E /* MenuItemView.swift in Sources */,
 				0F0DF4B92B6BF47900549C84 /* AuthView.swift in Sources */,
 				0F0DF4C12B6BFDDC00549C84 /* AuthViewModel.swift in Sources */,
 				0F0DF4C32B6C010300549C84 /* CustomTextField.swift in Sources */,
+				0F05A2C72B721EDA00702E87 /* ProfileView.swift in Sources */,
 				0F4CD9972B70CCBE00947F2E /* Food.swift in Sources */,
 				0F0DF4A42B6BC51000549C84 /* ContentView.swift in Sources */,
 				0F0DF4B62B6BF07E00549C84 /* View+Rect.swift in Sources */,
 				0F0DF4A22B6BC51000549C84 /* FoodieApp.swift in Sources */,
+				0F05A2C52B721A0C00702E87 /* PaymentMethod.swift in Sources */,
 				0F4CD99B2B71033B00947F2E /* TabShape.swift in Sources */,
 				0F4CD99D2B7111A400947F2E /* TabPosition.swift in Sources */,
 			);
