@@ -27,8 +27,7 @@ struct OnBoardingView: View {
                     .padding(.vertical,0)
                     .offset(y:-20)
             }
-            .padding()
-            .offset(y: -50)
+            .offset(y: -30)
             
             Spacer()
             
@@ -36,17 +35,20 @@ struct OnBoardingView: View {
                 Image("person-1")
                     .resizable()
                     .scaledToFill()
-                    .scaleEffect(1.3, anchor: .bottomLeading)
+                    .scaleEffect(1.2, anchor: .bottomLeading)
+                    .offset(x: 10)
                 
                 Image("person-2")
                     .resizable()
                     .scaledToFit()
                     .zIndex(-1)
-                    .scaleEffect(1.25, anchor: .bottomTrailing)
+                    .scaleEffect(1, anchor: .bottomTrailing)
+                    .offset(x: -15)
             }
+            .padding(.top, 50)
             .overlay(
                 LinearGradient(colors: [
-                    .clear,.clear,Color("PrimaryOrange").opacity(0.9),Color("PrimaryOrange")
+                    .clear,.clear,.clear,Color("PrimaryOrange").opacity(0.9),Color("PrimaryOrange")
                 ], startPoint: .top, endPoint: .bottom)
             )
             
@@ -69,9 +71,9 @@ struct OnBoardingView: View {
                 
             }
             .padding(.horizontal, 50)
+            .offset(y: -20)
             
         }
-        .padding()
         .background(Color("PrimaryOrange"))
     }
     

@@ -8,11 +8,54 @@
 import SwiftUI
 
 struct CustomTextField: View {
+    
+    var icon: String
+    var title: String
+    var hint: String
+    
+    @Binding var value: String
+    @Binding var showPassword: Bool
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 12) {
+            Label {
+                Text(title)
+                    .font(.subheadline)
+            }icon: {
+                Image(systemName: icon)
+            }
+            .foregroundStyle(.black.opacity(0.8))
+            
+            if title.contains("Password") && !showPassword {
+                SecureField(hint, text: $value)
+                    .padding(.top, 2)
+            } else {
+                TextField(hint, text: $value)
+                    .padding(.top, 2)
+            }
+            
+            Divider()
+                .background(.black.opacity(0.4))
+        }
+        .padding(.top, 25)
+        .overlay (
+            Group {
+                if title.contains("Password") {
+                    Button(action: {
+                        showPassword.toggle()
+                    }, label: {
+                        Text(showPassword ? "Hide" : "Show")
+                            .foregroundStyle(Color("PrimaryBlue"))
+                    })
+                    .offset(y: 20)
+                }
+            },
+            alignment: .trailing
+        )
+        
     }
 }
 
 #Preview {
-    CustomTextField()
+    CustomTextField(icon: "lock", title: "Password", hint: "12345", value: .constant("12345"), showPassword: .constant(true))
 }
